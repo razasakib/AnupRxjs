@@ -24,6 +24,17 @@ import { ConcatComponent } from './includes/concat/concat.component';
 import { MergeMapComponent } from './includes/merge-map/merge-map.component';
 import { ConcatMapComponent } from './includes/concat-map/concat-map.component';
 import { ToArrayComponent } from './includes/to-array/to-array.component';
+
+
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {  EmployeeSignupComponent} from './components/employee-signup/employee-signup.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { HeadersComponent } from './components/headers/headers.component';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,13 +57,20 @@ import { ToArrayComponent } from './includes/to-array/to-array.component';
     ConcatComponent,
     MergeMapComponent,
     ConcatMapComponent,
-    ToArrayComponent
+    ToArrayComponent,
+
+    LoginComponent,
+    DashboardComponent,
+    EmployeeSignupComponent,
+    SideBarComponent,
+    HeaderComponent,
+    HeadersComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [DesignUtilityService],
-  bootstrap: [ToArrayComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
